@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF -8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo" style = "font-family:'Cookie';   font-weight: 100;">Flauri Aura</div>
+            <ul class="navItems">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div class="links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h1> I' am <span class="multiText"></span></h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.  </p>
+                <div class="btns">
+                    <button class="button" role="button"><span class="text">DOWNLOAD CV</span></button>
+                    <button class="button" role="button"><span class="text">HIRE ME</span></button>
+                </div>
+            </div>
+         
+            <div class="imgbox">
+                <img src="splash.png"  id="splash">
+                <img src="imag7.png">
+            </div>
+            
+        </div>
+
+    </div>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings : ["coder","youtuber","Designer"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 1000
+        })
+    </script>
+</body>
+</html>

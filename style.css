@@ -1,0 +1,249 @@
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(90deg, rgba(219,231,201,1) 0%, rgba(120,148,97,1) 100%);
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    color: #294B29;
+    cursor: pointer;
+}
+.navItems{
+    display: flex;
+}
+
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navItems li a{
+    font-family:'Birthstone';
+    font-size: 18px;
+    font-weight: 300;
+    color:#50623A;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+.navItems li:hover a,
+.links a:hover{
+    color: #294B29;
+    text-decoration:underline;
+}
+
+
+.links a{
+    font-size: 30px;
+    color: #50623A;
+    margin: 25px 10px;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: start;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.cols{
+    width: 100%;
+}
+
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    left: -5%;
+    top: 75%;
+    background: linear-gradient(90deg, rgba(123,221,43,1) 0%, rgba(51,68,37,1) 100%);;
+    animation: object1 6s linear infinite;
+}
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(90deg, rgba(123,221,43,1) 0%, rgba(51,68,37,1) 100%);;
+    animation: object2 16s linear infinite;
+}
+
+@keyframes object1{
+    50%{
+        left: -5%;
+        top: 70%;
+    }
+}
+@keyframes object2{
+    50%{
+        left: 35%;
+        top: 10%;
+    }
+}
+.cols{
+    width: 50%;
+}
+.cols0{
+    width: 60%;
+    z-index: 5;
+}
+
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #789461;
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #294B29;
+}
+h1{
+    display: block;
+    font-size: 4em;
+    font-weight: 900;
+    color: #ffff;
+}
+.multiText{
+    color: #294B29;
+    text-transform: capitalize;
+}
+p{
+    display: block;
+    width: 130%;
+    font-size: 1.2em;
+    color: #294B29;
+}
+.btns{
+    width: 100%;
+    position:relative;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 10px ;
+    left: 10%;
+}
+
+.button {
+  align-items: center;
+  background-image: linear-gradient(90deg, rgba(120,148,97,1) 0%, rgba(51,68,37,1) 100%);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 10px;
+  justify-content: space-between;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 70px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+ 
+}
+
+.button:active,
+.button:hover {
+  outline: 0;
+}
+
+.button span {
+  background-color: #12372A;
+  padding: 8px 12px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 10px;
+    min-width: 150px;
+  }
+}
+
+.imgbox  {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imgbox img{
+    position: relative;
+    height: 100%;
+    top: 10px;
+    left: 20%;
+    animation: animateUser 4s linear infinite;
+}
+
+@keyframes animateUser {
+    50%{
+        right: 50px;
+        top: -5px;
+
+    }
+}
+
+.imgbox #splash{
+    position: absolute;
+    top: 50%;
+    bottom: 80%;
+    left: 45%;
+    width: 160%;
+    padding-left: 40%;
+    transform: translate(-50%, -50%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    50%{
+        top: 50%;
+        left: 50%;
+    }
+}
